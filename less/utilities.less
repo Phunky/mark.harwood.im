@@ -1,0 +1,35 @@
+// UTILITY CLASSES
+// ---------------
+
+// Quick floats
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+
+// Toggling content
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+// Visibility
+.invisible {
+  visibility: hidden;
+}
+
+// 3Dify any text
+.threedee(@color) {
+  color: @color;
+  text-shadow:
+    0 2px 0 darken(@color, 14%),
+    0 3px 0 darken(@color, 16%),
+    0 4px 0 darken(@color, 18%),
+    0 5px 0 darken(@color, 20%),
+    3px 8px 15px rgba(0,0,0,0.1),
+    3px 10px 5px rgba(0,0,0,0.3);
+}
